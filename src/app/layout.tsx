@@ -11,6 +11,7 @@ La función facilita la inclusión de fuentes personalizadas en una aplicación 
 import { Inter } from "next/font/google";
 // next-themes es una mini library que ayuda a poner themes por medio de module css o tailwind
 import { ThemeProvider } from "next-themes";
+// Este global css solo contiene el archivo de configuracion de tailwind
 import "./globals.css";
 
 import { Navbar } from "@/components/Navbar";

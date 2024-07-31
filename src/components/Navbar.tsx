@@ -2,7 +2,7 @@
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image"
-import { Disclosure } from "@headlessui/react";
+import { Disclosure, DisclosurePanel, DisclosureButton } from "@headlessui/react";
 
 export const Navbar = () => {
   const navigation = [
@@ -12,6 +12,19 @@ export const Navbar = () => {
     "Company",
     "Blog",
   ];
+
+  /*
+
+Explicacion del sideño del componente:
+
+- El nav bar esta hecho para verse en tres partes cuanto esta en pantallas grande (el logo, el menu y el boton de llamado a la accion con una
+pequeña adicon de una forma de cambiar el theme)
+
+- Luego en el logo hay algo bastante creativo, el logo contiene un disclosure escondido que solo se muestra cuando esta en pantallas
+pequeñas, cuando esta en pantallas grandes solo se muestra el logo, osea que el logo siempre esta visible sin importar la pantalla
+
+- El open es un state que viene con el componente disclosure para tener el state y de acuerto a ese state hacer cambios en el codigo
+  */
   return (
     <div className="w-full">
 
@@ -36,7 +49,7 @@ export const Navbar = () => {
                   </span>
                 </Link>
 
-                <Disclosure.Button
+                <DisclosureButton
                   aria-label="Toggle Menu"
                   className="px-2 py-1 ml-auto text-gray-500 rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700">
                   <svg
@@ -57,21 +70,24 @@ export const Navbar = () => {
                       />
                     )}
                   </svg>
-                </Disclosure.Button>
+                </DisclosureButton>
 
-                <Disclosure.Panel className="flex flex-wrap w-full my-5 lg:hidden">
+                <DisclosurePanel transition className="origin-top transition duration-200 ease-out data-[closed]:-translate-y-6 data-[closed]:opacity-0 flex flex-wrap w-full my-5 lg:hidden">
                   <>
+                  
                     {navigation.map((item, index) => (
                       <Link key={index} href="/" className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none">
                           {item}
                       </Link>
                     ))}
-                    <Link href="/" className="w-full px-6 py-2 mt-3 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
+                    <Link href="/" className="w-full px-6 py-2 mt-3 my-4 text-center text-white bg-indigo-600 rounded-md lg:ml-5">         
                         Get Started
                     </Link>
+                    <ThemeChanger />
                   </>
-                </Disclosure.Panel>
+                </DisclosurePanel>
               </div>
+              
             </>
           )}
         </Disclosure>

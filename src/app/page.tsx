@@ -10,12 +10,11 @@ import { Cta } from "@/components/Cta";
 
 import { benefitOne, benefitTwo } from "@/components/data";
 
-import Example from "@/components/exampleDisclosure";
 
 export default function Home() {
   return (
     <Container>
-      <Example />
+    
       <Hero />
       <SectionTitle
         preTitle="Nextly Benefits"

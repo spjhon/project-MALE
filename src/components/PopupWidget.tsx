@@ -9,6 +9,36 @@ import {
 } from "@headlessui/react";
 
 export function PopupWidget() {
+
+  /*
+
+Claro, te explico cada parte de esa línea:
+
+### `useForm` Hook de React Hook Form
+`useForm` es un hook proporcionado por la librería React Hook Form para manejar formularios de manera eficiente en componentes de React. Este hook devuelve varios métodos y propiedades que facilitan la gestión del estado del formulario y su validación.
+
+### Desestructuración de `useForm`
+1. **`register`**: Una función utilizada para registrar los inputs en el formulario. Vincula los campos del formulario con React Hook Form, permitiendo la captura y validación de los datos.
+
+2. **`handleSubmit`**: Una función que se utiliza para manejar el evento de envío del formulario. Se pasa como prop al atributo `onSubmit` del formulario. Esta función toma como argumento una función callback que se ejecutará al enviar el formulario.
+
+3. **`reset`**: Una función que restablece los valores del formulario a su estado inicial o a valores específicos proporcionados. Es útil para limpiar el formulario después de un envío exitoso o para restablecer el formulario a un estado inicial específico.
+
+4. **`control`**: Un objeto que se utiliza junto con componentes controlados como `Controller` en React Hook Form. Permite integrar componentes de terceros que no tienen una API compatible con React Hook Form.
+
+5. **`formState`**: Un objeto que contiene el estado del formulario. De este objeto se extraen las siguientes propiedades:
+   - **`errors`**: Un objeto que contiene los mensajes de error de validación de cada campo del formulario.
+   - **`isSubmitSuccessful`**: Un booleano que indica si el formulario se ha enviado exitosamente.
+   - **`isSubmitting`**: Un booleano que indica si el formulario se está enviando en ese momento.
+
+### Configuración de `useForm`
+La llamada a `useForm` puede aceptar un objeto de configuración. En este caso, se está utilizando:
+- **`mode: "onTouched"`**: Configura el modo de validación del formulario. Con `onTouched`, la validación de los campos del formulario se realizará cuando los campos pierdan el foco (es decir, cuando el usuario haga clic fuera del campo después de interactuar con él).
+
+Esta configuración permite una validación más amigable, ya que los errores solo aparecen cuando el usuario ha interactuado con los campos, en lugar de aparecer inmediatamente cuando el formulario se carga o se envía.
+
+  */
+
   const {
     register,
     handleSubmit,
@@ -22,6 +52,8 @@ export function PopupWidget() {
   const [isSuccess, setIsSuccess] = useState(false);
   const [Message, setMessage] = useState("");
 
+
+  //intuyo es que cuando se envia o se hace un submit y no hay un nombre, se envie someone en el cambo de nombre
   const userName = useWatch({ control, name: "name", defaultValue: "Someone" });
 
   const onSubmit = async (data: any, e: any) => {
@@ -118,13 +150,35 @@ export function PopupWidget() {
               as="div"
             >
               <DisclosurePanel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
+               
                 <div className="flex flex-col items-center justify-center h-32 p-5 bg-indigo-600">
                   <h3 className="text-lg text-white">How can we help?</h3>
                   <p className="text-white opacity-50">
                     We usually respond in a few hours
                   </p>
                 </div>
+
                 <div className="flex-grow h-full p-6 overflow-auto bg-gray-50 ">
+
+{/*
+Correcto, hay tres tipos de renderizados basados en el estado del formulario que gestiona el hook `useForm`:
+
+1. **Formulario Inicial (`!isSubmitSuccessful`)**
+   - **Condición**: Muestra el formulario cuando el envío no ha sido exitoso.
+   - **Propósito**: Permitir al usuario completar y enviar el formulario.
+
+2. **Éxito en el Envío (`isSubmitSuccessful && isSuccess`)**
+   - **Condición**: Muestra este mensaje cuando el formulario se ha enviado exitosamente y `isSuccess` es verdadero.
+   - **Propósito**: Informar al usuario que el mensaje se ha enviado correctamente y proporcionar un botón para volver a empezar.
+
+3. **Error en el Envío (`isSubmitSuccessful && !isSuccess`)**
+   - **Condición**: Muestra este mensaje cuando el formulario se ha enviado (es decir, ha pasado el proceso de envío) pero ha habido un error (`isSuccess` es falso).
+   - **Propósito**: Informar al usuario sobre un problema con el envío del formulario y proporcionar un botón para intentar de nuevo.
+
+Estos estados permiten una experiencia de usuario más dinámica y manejan diferentes situaciones durante el proceso de envío del formulario.
+
+*/}
+
                   {!isSubmitSuccessful && (
                     <form onSubmit={handleSubmit(onSubmit)} noValidate>
                       <input
@@ -287,6 +341,9 @@ export function PopupWidget() {
                     </form>
                   )}
 
+
+
+
                   {isSubmitSuccessful && isSuccess && (
                     <div className="flex flex-col items-center justify-center h-full text-center text-white rounded-md">
                       <svg
@@ -315,6 +372,10 @@ export function PopupWidget() {
                       </button>
                     </div>
                   )}
+
+
+
+
 
                   {isSubmitSuccessful && !isSuccess && (
                     <div className="flex flex-col items-center justify-center h-full text-center text-white rounded-md">
@@ -345,6 +406,10 @@ export function PopupWidget() {
                       </button>
                     </div>
                   )}
+
+
+
+
                 </div>
               </DisclosurePanel>
             </Transition>

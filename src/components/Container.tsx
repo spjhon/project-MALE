@@ -5,6 +5,17 @@ interface ContainerProps {
   className?: string;
 }
 
+
+// Exportamos una función llamada Container que recibe props como argumento. El tipo de props es Readonly<ContainerProps>, 
+//lo que significa que las propiedades son de solo lectura y siguen la estructura definida en ContainerProps.
+
+/*
+
+${props.className ? props.className : ""}: Esto añade cualquier clase CSS 
+adicional pasada a través de la propiedad className de props. Si className no se proporciona, se añade una cadena vacía.
+
+*/
+
 export function Container(props: Readonly<ContainerProps>) {
   return (
     <div
