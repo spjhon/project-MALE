@@ -17,16 +17,16 @@ export default function Home() {
     
       <Hero />
       <SectionTitle
-        preTitle="Nextly Benefits"
-        title=" Why should you use this landing page"
+        preTitle="¡En MalePet Care estamos aquí para ti y tu peludito!"
+        title="¿Por qué elegirnos?"
       >
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        Por que tu mascota estará en las mejores manos, brindandole la seguridad y el amor que necesita mientras tú no estás. ¡Confia en nosotros para mantener a tu mascota feliz y saludable!
+    
       </SectionTitle>
 
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
+     
 
       <SectionTitle
         preTitle="Watch a video"
