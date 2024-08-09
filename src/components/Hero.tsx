@@ -16,7 +16,7 @@ export const Hero = () => {
               En MalePet Care, somos expertos en cuidar a tu mascota cuando no puedes. Ofrecemos cuidado en casa, paseos individuales, acompañamiento a visitas médicas y ¡mucho mas!
             </p>
 
-            <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
+            <div className="transition-transform duration-300 transform hover:scale-105 flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
               <a
                 href="https://wa.me/3147045347"
                 target="_blank"
@@ -127,7 +127,7 @@ export const Hero = () => {
               src={heroImg}
               width="500"
               height="500"
-              className={"object-cover rounded-2xl"}
+              className={"transition-transform duration-300 transform hover:scale-105 object-cover rounded-2xl"}
               alt="Hero Illustration"
               loading="eager"
               placeholder="blur"

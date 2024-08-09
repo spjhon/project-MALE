@@ -40,7 +40,7 @@ pequeñas, cuando esta en pantallas grandes solo se muestra el logo, osea que el
                         alt="N"
                         width={500}
                         height={500}
-                        className="w-32 sm:w-40 md:w-40 lg:w-48"
+                        className="transition-transform duration-300 transform hover:scale-105 w-32 sm:w-40 md:w-40 lg:w-48"
                       />
                     </span>
                     {/*<span>nadita</span>*/}
@@ -88,7 +88,7 @@ pequeñas, cuando esta en pantallas grandes solo se muestra el logo, osea que el
                     ))}
                     <Link
                       href="/"
-                      className="w-full px-6 py-2 mt-3 my-4 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
+                      className="transition-transform duration-300 transform hover:scale-105 w-full px-6 py-2 mt-3 my-4 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                     >
                       Escribenos a WhatsApp
                     </Link>
@@ -119,7 +119,7 @@ pequeñas, cuando esta en pantallas grandes solo se muestra el logo, osea que el
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <a
             href="https://www.instagram.com/malepetcare/"
-            className=""
+            className="transition-transform duration-300 transform hover:scale-105"
             title="Visita Nuestro Instagram"
             target="_blank"
             rel="noopener"
