@@ -43,6 +43,7 @@ export function Footer() {
                 target="_blank"
                 rel="noopener"
                 className="relative block w-44"
+                title="link"
               >
                 <Image
                   src="/img/vercel.svg"

@@ -6,6 +6,8 @@ import { Video } from "@/components/Video";
 import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
+import Slider from "@/components/Slider/Slider";
+import {data} from "@/components/Slider/data";
 
 
 import { benefitOne, benefitTwo } from "@/components/data";
@@ -46,6 +48,8 @@ export default function Home() {
         Testimonials is a great way to increase the brand trust and awareness.
         Use this section to highlight your popular customers.
       </SectionTitle>
+
+      <Slider data={data} activeSlide= {2} ></Slider>
 
       <Testimonials />
 
