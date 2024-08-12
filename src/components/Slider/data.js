@@ -1,52 +1,58 @@
-import imagenDemoVeterinary from "./veterinary.png"
+
+import owner01 from "./owners/owner (1).jpeg"
+import owner02 from "./owners/owner (2).jpeg"
+import owner03 from "./owners/owner (3).jpeg"
+import owner04 from "./owners/owner (4).jpeg"
+import owner05 from "./owners/owner (5).jpeg"
+import owner06 from "./owners/owner (6).jpeg"
 
 export const data = [
     {
       id: 1,
       bgColor: "#F54748",
-      icon: imagenDemoVeterinary.src,
-      title: "Lorem Ipsum",
+      icon: owner01.src,
+      title: "Mama de perla",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        "\"¡GRACIAS, por apoyarnos con la Perlita mas hermosa!😺😺😺\""
     },
     {
       id: 2,
       bgColor: "#7952B3",
-      icon: imagenDemoVeterinary.src,
-      title: "Lorem Ipsum",
+      icon: owner02.src,
+      title: "Mama de Coco",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        "\"¡Gracias a ti, @MalePetCare, por los mejores cuidados para coco!😻😻\""
     },
     {
       id: 3,
       bgColor: "#1597BB",
-      icon: imagenDemoVeterinary.src,
-      title: "Lorem Ipsum",
+      icon: owner03.src,
+      title: "Papá de Kira y Afrodita",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        "\"Mil y Mil gracias!!! mis peludos estuvieron acompañados seguros y felices👏\""
     },
     {
       id: 4,
       bgColor: "#185ADB",
-      icon: imagenDemoVeterinary.src,
-      title: "Lorem Ipsum",
+      icon: owner04.src,
+      title: "Papá de Mango Chupado",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        "\"🙌🙌Mi peluchito con la mejor cuidadora!🙌\""
     },
     {
       id: 5,
       bgColor: "#FF616D",
-      icon: imagenDemoVeterinary.src,
-      title: "Lorem Ipsum",
+      icon: owner05.src,
+      title: "Papá de Burno y Tequila",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        "\"@MalePetCare me deja muy contento y se le nota a mis perritos Bruno y Tequila cada vez que salen de paseo, de verdad lo mejor!!\""
     },
     {
       id: 6,
       bgColor: "#FF616D",
-      icon: imagenDemoVeterinary.src,
-      title: "Lorem Ipsum",
+      icon: owner06.src,
+      title: "Mamá de Kiara",
       desc:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+        "\"Mi peluchito con la mejor cuidadora!!!❤️❤️❤️\""
     }
   ];

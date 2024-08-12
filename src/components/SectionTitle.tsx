@@ -1,19 +1,27 @@
 import React from "react";
 import { Container } from "@/components/Container";
+import Image from "next/image";
 
 interface SectionTitleProps {
   preTitle?: string;
   title?: string;
   align?: "left" | "center";
   children?: React.ReactNode;
+  icon?: string;
 }
 
 export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
   return (
     <Container
+
       className={`flex w-full flex-col mt-4 ${
         props.align === "left" ? "" : "items-center justify-center text-center"
       }`}>
+
+{props.icon && (
+        <Image src={props.icon} alt="drawanimal" width={100} height={100}></Image>
+      )}
+
       {props.preTitle && (
         <div className="text-sm font-bold tracking-wider text-indigo-600 uppercase">
           {props.preTitle}

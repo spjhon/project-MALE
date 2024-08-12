@@ -10,8 +10,14 @@ import Slider from "@/components/Slider/Slider";
 import { data } from "@/components/Slider/data";
 import GridGallery from "@/components/GridGallery";
 import { photos } from '@/components/data';
+import TimeLine from "@/components/TimeLine/TimeLine";
 
-import { benefitOne, benefitTwo } from "@/components/data";
+import { benefitOne, benefitTwo, timelineData } from "@/components/data";
+
+//Dibujos de animalitos para adornar la pagina sacados de reddit
+
+import drawpet02 from "../../public/draws/drawpet02.png"
+import drawpet03 from "../../public/draws/drawpet03.png"
 
 export default function Home() {
   return (
@@ -20,6 +26,7 @@ export default function Home() {
       <SectionTitle
         preTitle="¡En MalePet Care estamos aquí para ti y tu peludito!"
         title="¿Por qué elegirnos?"
+        icon= {drawpet02.src}
       >
         Por que tu mascota estará en las mejores manos, brindandole la seguridad
         y el amor que necesita mientras tú no estás. ¡Confia en nosotros para
@@ -41,11 +48,11 @@ export default function Home() {
       <Video videoId="fZ0D0cnR88E" />
 
       <SectionTitle
-        preTitle="Testimonials"
-        title="Here's what our customers said"
+        preTitle="TESTIMONIOS"
+        title="Esto dicen nuestros clientes"
+        icon= {drawpet03.src}
       >
-        Testimonials is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
+        Muchos clientes han quedado altamente satisfechos con la calidad del servicio ofrecido por MalePet Care
       </SectionTitle>
 
       <Slider data={data} activeSlide={2}></Slider>
@@ -67,6 +74,13 @@ export default function Home() {
       </SectionTitle>
 
       <Faq />
+
+      <SectionTitle preTitle="SERVICIO PERZONALIZADO, ATENCION EN CADA DETALLE" title="¿Como contratar una niñera de mascotas?">
+        Servico directo que dejara a tus peludos en buenas manos y regresaran con una sonrisa que se nota
+      </SectionTitle>
+
+<TimeLine timelineData = {timelineData} ></TimeLine>
+
       <Cta />
     </Container>
   );

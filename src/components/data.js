@@ -28,6 +28,8 @@ import photo006 from "../../public/photos/photo (6).jpeg"
 import photo007 from "../../public/photos/photo (7).jpeg"
 import photo008 from "../../public/photos/photo (8).jpeg"
 
+
+
 const benefitOne = {
   title: "Cuidados en Casa",
   desc: "En MalePet Care, tratamos a cada mascota como si fuera nuestra, proporcionando amor, atención y cuidado de calidad. Con nosotros puedes estar seguro que tu mascota esta en las mejores manos",
@@ -142,5 +144,32 @@ const photos =  [
     },
   ];
 
+const timelineData = [
+      {
+        title: "Contactanos",
+        content: [
+          "Resuelve todas tus dudas a travez de nuestro canal de wassap",
+          
+        ],
+        isBig: true
+      },
+      {
+        title: "Contratanos",
+        content: [
+          "Una vez se cuadre horario y calendario se procede a..."
+        ],
+        isBig: true
+      },
+      {
+        title: "Entrega el perro",
+        content: [
+          "Tu peludo quedara muy feliz",
+          
+        ],
+        isBig: true
+      },
+      // Añade más años según sea necesario...
+    ]
 
-export {benefitOne, benefitTwo, photos};
+
+export {benefitOne, benefitTwo, photos, timelineData};

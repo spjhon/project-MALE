@@ -50,7 +50,7 @@ const GridGallery: React.FC<GridGalleryProps> = ({ galleryID, images }) => {
           target="_blank"
           rel="noreferrer"
           title='demo'
-          className="block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+          className="transition-transform duration-300 transform hover:scale-105 block overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
         >
           {/* eslint-disable-next-line @next/next/no-img-element*/}
           <Image
