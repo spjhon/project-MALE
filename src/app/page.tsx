@@ -7,28 +7,27 @@ import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 import Slider from "@/components/Slider/Slider";
-import {data} from "@/components/Slider/data";
-
+import { data } from "@/components/Slider/data";
+import GridGallery from "@/components/GridGallery";
+import { photos } from '@/components/data';
 
 import { benefitOne, benefitTwo } from "@/components/data";
-
 
 export default function Home() {
   return (
     <Container>
-    
       <Hero />
       <SectionTitle
         preTitle="¡En MalePet Care estamos aquí para ti y tu peludito!"
         title="¿Por qué elegirnos?"
       >
-        Por que tu mascota estará en las mejores manos, brindandole la seguridad y el amor que necesita mientras tú no estás. ¡Confia en nosotros para mantener a tu mascota feliz y saludable!
-    
+        Por que tu mascota estará en las mejores manos, brindandole la seguridad
+        y el amor que necesita mientras tú no estás. ¡Confia en nosotros para
+        mantener a tu mascota feliz y saludable!
       </SectionTitle>
 
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
-     
 
       <SectionTitle
         preTitle="Watch a video"
@@ -49,9 +48,18 @@ export default function Home() {
         Use this section to highlight your popular customers.
       </SectionTitle>
 
-      <Slider data={data} activeSlide= {2} ></Slider>
+      <Slider data={data} activeSlide={2}></Slider>
 
       <Testimonials />
+
+      <SectionTitle
+        preTitle="NUESTROS FELICES CLIENTES"
+        title="Conoce Nuestros clientes"
+      >
+        Algunos de nuestro felices clientes disfrutando de nuestro servicio de calidad para los peluditos
+      </SectionTitle>
+
+      <GridGallery galleryID={"my-test-gallery"} images = {photos}></GridGallery>
 
       <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
         Answer your customers possible questions here, it will increase the
