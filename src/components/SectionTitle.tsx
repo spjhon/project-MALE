@@ -13,13 +13,18 @@ interface SectionTitleProps {
 export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
   return (
     <Container
-
       className={`flex w-full flex-col mt-4 ${
         props.align === "left" ? "" : "items-center justify-center text-center"
-      }`}>
-
-{props.icon && (
-        <Image src={props.icon} alt="drawanimal" width={100} height={100}></Image>
+      }`}
+    >
+      {props.icon && (
+        <Image
+          src={props.icon}
+          alt="drawanimal"
+          width={100}
+          height={100}
+          className="rounded-xl"
+        ></Image>
       )}
 
       {props.preTitle && (
@@ -41,5 +46,4 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
       )}
     </Container>
   );
-}
-
+};
