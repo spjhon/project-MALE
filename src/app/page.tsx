@@ -10,9 +10,9 @@ import Slider from "@/components/Slider/Slider";
 import { data } from "@/components/Slider/data";
 import GridGallery from "@/components/GridGallery";
 import { photos } from "@/components/data";
-import TimeLine from "@/components/TimeLine/TimeLine";
+import TimeLineDemo from "@/components/VerticalTimeLine";
 
-import { benefitOne, benefitTwo, timelineData } from "@/components/data";
+import { benefitOne, benefitTwo } from "@/components/data";
 
 //Dibujos de animalitos para adornar la pagina sacados de reddit
 
@@ -77,6 +77,17 @@ export default function Home() {
       <GridGallery galleryID={"my-test-gallery"} images={photos}></GridGallery>
 
       <SectionTitle
+        preTitle="SERVICIO PERZONALIZADO, ATENCION EN CADA DETALLE"
+        title="¿Como contratar una niñera de mascotas?"
+        icon={drawpet07.src}
+      >
+        Servico directo que dejara a tus peludos en buenas manos y regresaran
+        con una sonrisa que se nota
+      </SectionTitle>
+
+      <TimeLineDemo></TimeLineDemo>
+
+      <SectionTitle
         preTitle="FAQ"
         title="Frequently Asked Questions"
         icon={drawpet06.src}
@@ -86,17 +97,6 @@ export default function Home() {
       </SectionTitle>
 
       <Faq />
-
-      <SectionTitle
-        preTitle="SERVICIO PERZONALIZADO, ATENCION EN CADA DETALLE"
-        title="¿Como contratar una niñera de mascotas?"
-        icon={drawpet07.src}
-      >
-        Servico directo que dejara a tus peludos en buenas manos y regresaran
-        con una sonrisa que se nota
-      </SectionTitle>
-
-      <TimeLine timelineData={timelineData}></TimeLine>
 
       <Cta />
     </Container>

@@ -19,7 +19,7 @@ adicional pasada a través de la propiedad className de props. Si className no s
 export function Container(props: Readonly<ContainerProps>) {
   return (
     <div
-      className={`container p-2 mx-auto lg:p-12 ${
+      className={`p-2 mx-auto lg:p-12 ${
         props.className ? props.className : ""
       }`}>
       {props.children}

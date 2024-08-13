@@ -29,7 +29,8 @@
     "react-dom": "^18",
     "react-hook-form": "^7.51.4",
     "react-photoswipe-gallery": "^3.0.2",
-    "react-swipeable": "^7.0.1"
+    "react-swipeable": "^7.0.1",
+    "react-vertical-timeline-component": "^3.6.0"
   },
   "devDependencies": {
     "@types/node": "^20",

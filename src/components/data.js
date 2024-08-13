@@ -144,32 +144,7 @@ const photos =  [
     },
   ];
 
-const timelineData = [
-      {
-        title: "Contactanos",
-        content: [
-          "Resuelve todas tus dudas a travez de nuestro canal de wassap",
-          
-        ],
-        isBig: true
-      },
-      {
-        title: "Contratanos",
-        content: [
-          "Una vez se cuadre horario y calendario se procede a..."
-        ],
-        isBig: true
-      },
-      {
-        title: "Entrega el perro",
-        content: [
-          "Tu peludo quedara muy feliz",
-          
-        ],
-        isBig: true
-      },
-      // Añade más años según sea necesario...
-    ]
 
 
-export {benefitOne, benefitTwo, photos, timelineData};
+
+export {benefitOne, benefitTwo, photos};
