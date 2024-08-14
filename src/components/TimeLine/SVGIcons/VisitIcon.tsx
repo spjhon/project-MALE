@@ -12,7 +12,7 @@ const VisitIcon = () => {
 
       <defs></defs>
 
-      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+      <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
         <g transform="translate(1.000000, 1.000000)" fill="#fff">
           <circle
             cx="12.473"

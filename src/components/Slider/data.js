@@ -1,10 +1,10 @@
 
-import owner01 from "./owners/owner (1).jpeg"
-import owner02 from "./owners/owner (2).jpeg"
-import owner03 from "./owners/owner (3).jpeg"
-import owner04 from "./owners/owner (4).jpeg"
-import owner05 from "./owners/owner (5).jpeg"
-import owner06 from "./owners/owner (6).jpeg"
+import owner01 from "../../../public/owners/owner (1).jpeg"
+import owner02 from "../../../public/owners/owner (2).jpeg"
+import owner03 from "../../../public/owners/owner (3).jpeg"
+import owner04 from "../../../public/owners/owner (4).jpeg"
+import owner05 from "../../../public/owners/owner (5).jpeg"
+import owner06 from "../../../public/owners/owner (6).jpeg"
 
 export const data = [
     {
