@@ -4,47 +4,32 @@ import React from 'react';
 import { VerticalTimeline } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import ExperienceElement from './ExperienceElement';
+import ContactIcon from './SVGIcons/ContactIcon';
+import VisitIcon from './SVGIcons/VisitIcon';
+import contactImage from "../../../public/TimeLine/contactImage.png"
+import visitImage from "../../../public/TimeLine/visitImage.png"
 
 const experiences = [
   {
-    date: "CONTACTANOS",
-    title: "Por WhatsApp, E-mail o Celular",
-    subtitle: "Por WhatsApp, E-mail o Celular",
-    description: "Creative Direction, User Experience, Visual Design, Project Management, Team Leading",
-    icon: "icon",
-    className:"bg-red-500 dark:bg-blue-300",
+    
+    title: "Contactanos por WhatsApp, E-mail o Celular",
+    description: "Utiliza nuestro canal de whatsapp y te responderemos cualquier duda en un santiamen",
+    icon: <ContactIcon></ContactIcon>,
+    image: contactImage.src,
     iconStyle: {
       background: 'rgb(79 70 229)',
-      color: 'red',
-      borderColor: 'red',
-      boxShadow: '2px 2px 5px red',
-
     },
-    contentStyle: {
-      background: "bg-red",
-      color: 'rgb(79 70 229)'
-    },
-    contentArrowStyle: {
-      borderRight: '7px solid  rgb(79 70 229)'
-    }
+    
   },
   {
-    date: "2010 - 2011",
-    title: "Art Director",
-    subtitle: "San Francisco, CA",
-    description: "Creative Direction, User Experience, Visual Design, SEO, Online Marketing",
-    icon: "icon",
+    
+    title: "Visita Previa",
+    description: "Una corta visita de 10 minutos en donde se observa la mascota y se cuadran detalles",
+    icon: <VisitIcon></VisitIcon>,
+    image: visitImage.src,
     iconStyle: {
       background: 'rgb(79 70 229)',
-      color: 'red'
     },
-    contentStyle: {
-      background: 'rgb(79 70 229)',
-      color: 'red'
-    },
-    contentArrowStyle: {
-      borderRight: '7px solid  rgb(79 70 229)'
-    }
   },
   // Agrega más objetos aquí para cada elemento de la línea de tiempo
 ];
@@ -66,3 +51,5 @@ const TimeLineDemo = () => {
 };
 
 export default TimeLineDemo;
+
+
