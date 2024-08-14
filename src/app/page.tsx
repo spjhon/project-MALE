@@ -10,7 +10,7 @@ import Slider from "@/components/Slider/Slider";
 import { data } from "@/components/Slider/data";
 import GridGallery from "@/components/GridGallery";
 import { photos } from "@/components/data";
-import TimeLineDemo from "@/components/VerticalTimeLine";
+import TimeLineDemo from "@/components/TimeLine/VerticalTimeLine";
 
 import { benefitOne, benefitTwo } from "@/components/data";
 
