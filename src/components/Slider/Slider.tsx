@@ -176,7 +176,7 @@ export default Slider;
 const SliderContent: React.FC<SliderContentProps> = (props) => {
   return (
     <div className={styles.sliderContent}>
-      <Image className={`rounded-xl`} src={props.icon} alt="icono" width={50} height={50} />
+      <img className={`rounded-xl`} src={props.icon} alt="icono" width={50} height={50} />
       
       <h2 className={`font-bold`}>{props.title}</h2>
       <p>{props.desc}</p>
