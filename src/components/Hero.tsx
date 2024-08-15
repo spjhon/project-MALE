@@ -116,7 +116,7 @@ export const Hero = () => {
                 rel="noopener"
                 className="flex items-center space-x-2 text-gray-500 dark:text-gray-400"
               >
-                <span>Reserva ahora y garantízale a tu mascota el mejor cuidado, incluso cuando estés lejos</span>
+                <span>Reserva ahora y garantiza que tu mascota reciba el mejor cuidado, incluso cuando estés lejos</span>
               </a>
             </div>
           </div>

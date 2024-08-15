@@ -40,13 +40,11 @@ export default function Home() {
       <Benefits imgPos="right" data={benefitTwo} />
 
       <SectionTitle
-        preTitle="Watch a video"
-        title="Learn how to fullfil your needs"
+        preTitle="Mira un video"
+        title="Explora como  cuidar lo que más importa"
         icon={drawpet05.src}
       >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
+        Video informativo sobre MalePet Care
       </SectionTitle>
 
       <Video videoId="fZ0D0cnR88E" />
@@ -65,12 +63,11 @@ export default function Home() {
       <Testimonials />
 
       <SectionTitle
-        preTitle="NUESTROS FELICES CLIENTES"
-        title="Conoce Nuestros clientes"
+        preTitle="PELUDOS FELICES"
+        title="Conoce a los consentidos de MalePets Care"
         icon={drawpet04.src}
       >
-        Algunos de nuestro felices clientes disfrutando de nuestro servicio de
-        calidad para los peluditos
+        Algunos de nuestros queridos peluditos gozando de nuestro servicio de calidad.
       </SectionTitle>
 
       <GridGallery galleryID={"my-test-gallery"} images={photos}></GridGallery>

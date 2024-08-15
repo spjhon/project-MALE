@@ -7,7 +7,7 @@ export type ExperienceElementProps = {
   item: {
     date?: string;
     title: string;
-    description: string;
+    description: React.ReactNode;
     icon: React.ReactNode;
     image: string;
     iconStyle: React.CSSProperties;
@@ -39,9 +39,9 @@ const ExperienceElement = ({ item }: ExperienceElementProps) => {
           />
           <div className="px-6 py-4">
             <h3 className="text-xl font-semibold text-gray-100">{item.title}</h3>
-            <p className="text-gray-100">
+            <div className="text-gray-100">
               {item.description}
-            </p>
+            </div>
           </div>
         </div>
       </VerticalTimelineElement>
