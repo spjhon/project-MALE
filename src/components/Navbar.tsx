@@ -10,7 +10,7 @@ import {
 import logo from "../../public/img/logo.webp";
 
 export const Navbar = () => {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
+  const navigation = ["Soluciones", "Planes y Tarifas", "Conócenos", "Blog"];
 
   /*
 
