@@ -7,7 +7,7 @@ import {
   DisclosurePanel,
   DisclosureButton,
 } from "@headlessui/react";
-import logo from "../../public/img/logo.png";
+import logo from "../../public/img/logo.webp";
 
 export const Navbar = () => {
   const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];

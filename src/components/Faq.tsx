@@ -49,12 +49,12 @@ const faqdata = [
       "En cada visita o paseo se hace la actualización con videos, fotos o video llamada y un resumen del comportamiento de cada peludito.",
   },
   {
-    question: "¿Pueden cuidar a mi mascota si tiene necesidades médicas especiales? ",
+    question: "•	¿Pueden cuidar a mi mascota si tiene necesidades médicas especiales? ",
     answer:
       "Claro que si, siempre y cuando sean informadas en la visita previa.",
   },
   {
-    question: "¿Qué debo preparar antes de la llegada del cuidador? ",
+    question: "•	¿Qué debo preparar antes de la llegada del cuidador? ",
     answer:
       "Debes de dejar todos los implementos al alcance de los cuidadores y en la visita previa informar donde se ubican los elementos correspondientes al cuidado de la mascota dependiendo de sus necesidades  (Alimentos, golosinas, Platos, medicamentos,  utensilios de aseo, arena, etc.)",
   },
