@@ -17,12 +17,12 @@ import { benefitOne, benefitTwo } from "@/components/data";
 
 //Dibujos de animalitos para adornar la pagina sacados de reddit
 
-import drawpet02 from "../../public/draws/drawpet02.png";
-import drawpet03 from "../../public/draws/drawpet03.png";
-import drawpet04 from "../../public/draws/drawpet04.png";
-import drawpet05 from "../../public/draws/drawpet05.png";
-import drawpet06 from "../../public/draws/drawpet06.png";
-import drawpet07 from "../../public/draws/drawpet07.png";
+import drawpet02 from "../../public/draws/drawpet02.webp";
+import drawpet03 from "../../public/draws/drawpet03.webp";
+import drawpet04 from "../../public/draws/drawpet04.webp";
+import drawpet05 from "../../public/draws/drawpet05.webp";
+import drawpet06 from "../../public/draws/drawpet06.webp";
+import drawpet07 from "../../public/draws/drawpet07.webp";
 
 export default function Home() {
   return (

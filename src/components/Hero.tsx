@@ -9,11 +9,11 @@ export const Hero = () => {
         <div className="flex items-center justify-center w-full lg:w-1/2">
           <div className="max-w-2xl mb-8">
             <h1 className="pt-10 text-4xl font-bold leading-snug tracking-tight text-gray-800 lg:pt-0 lg:text-4xl lg:leading-tight xl:text-6xl xl:leading-tight dark:text-white">
-              Cuidado, atención y paseos que tu mascota amará
+              Atención, amor, protección y paseos: Todo lo que tu mascota necesita, cuando más lo requieras.
             </h1>
             <p className="text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
               
-              En MalePet Care, somos expertos en cuidar a tu mascota cuando no puedes. Ofrecemos cuidado en casa, paseos individuales, acompañamiento a visitas médicas y ¡mucho mas!
+              ¡No importa si es un viaje inesperado, programado o una larga jornada fuera de casa!, En MalePet Care, estamos aquí para que tu mascota reciba el mejor cuidado, incluso cuando no puedes estar a su lado
             </p>
 
             <div className="transition-transform duration-300 transform hover:scale-105 flex items-center justify-center sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">

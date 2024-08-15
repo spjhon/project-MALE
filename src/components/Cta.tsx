@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "@/components/Container";
 import Image from "next/image";
-import drawpet01 from "../../public/draws/drawpet01.png"
+import drawpet01 from "../../public/draws/drawpet01.webp"
 
 export const Cta = () => {
   return (
