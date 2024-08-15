@@ -7,8 +7,8 @@ import {
   SunIcon,
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../../public/img/benefit-one.jpeg";
-import benefitTwoImg from "../../public/img/benefit-two.jpeg";
+import benefitOneImg from "../../public/img/benefit-one.webp";
+import benefitTwoImg from "../../public/img/benefit-two.webp";
 
 
 import manitos from "../../public/img/icon-one.png"
@@ -32,45 +32,45 @@ import photo008 from "../../public/photos/photo (8).jpeg"
 
 const benefitOne = {
   title: "Cuidados en Casa",
-  desc: "En MalePet Care, tratamos a cada mascota como si fuera nuestra, proporcionando amor, atención y cuidado de calidad. Con nosotros puedes estar seguro que tu mascota esta en las mejores manos",
+  desc: "En MalePets Care, tratamos a cada mascota como si fuera nuestra, proporcionando amor, atención y cuidado de calidad. Con nosotros, puedes estar seguro de que tu mascota está en las mejores manos.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Atencion Personalizada",
-      desc: "Cada mascota recibe cuidados adaptados a sus necesidades específicas y preferencias individuales",
+      title: "Atención Personalizada",
+      desc: "Cada mascota recibe cuidados adaptados a sus necesidades específicas y preferencias individuales.",
       icon: manitos,
     },
     {
-      title: "Reduccion del estrés",
-      desc: "Mantener a las mascotas en su entorno reduce su ansiedad y estres al evitar cambios drasticos en su rutina",
+      title: "Reducción del estrés",
+      desc: "Mantener a las mascotas en su entorno reduce su ansiedad y estrés al evitar cambios drásticos en su rutina.",
       icon: brain,
     },
     {
       title: "Flexibilidad",
-      desc: "Servicios disponibles seguin las necesidades del dueño, ya sea durante viajes, largas jornadas laborales o emergencias inesperadas",
+      desc: "Servicios disponibles según las necesidades del dueño, ya sea durante viajes, largas jornadas laborales o emergencias inesperadas.",
       icon: time,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Paseos Individuales",
-  desc: "Cada paseo se realiza de manera individual, lo que permite una atencion completa y personalizada. Esto garantiza la seguridad de tu mascota y la conexion mas cercana con el cuidador",
+  title: "Paseos Exclusivos",
+  desc: "Cada paseo se realiza de manera individual, lo que permite una atención completa y personalizada. Esto garantiza la seguridad de tu mascota y una conexión más cercana con el cuidador.",
   image: benefitTwoImg,
   bullets: [
     {
       title: "Ejercicio adecuado",
-      desc: "Cada paseo se adapta a las necesidades especificas del lomito como su ritmo, nivel de energia, preferencias y edad",
+      desc: "Cada paseo se adapta a las necesidades específicas de tu peludito, como su ritmo, nivel de energía, preferencias y edad.",
       icon: dog,
     },
     {
       title: "Mayor Control",
-      desc: "Permite al dueño especificar exactamente lo que neceista su mascota, asegurando que sus necesidades se satisfacen completamente",
+      desc: "Permite al dueño especificar exactamente lo que necesita su mascota, asegurando que sus necesidades se satisfacen completamente.",
       icon: dogWalking,
     },
     {
       title: "Seguridad",
-      desc: "Los paseos individuales aseguran que el lomito este bajo supervisión constante, reduciendo el riesgo de contagio de enfermedades, accidentes o imprevistos.",
+      desc: "Los paseos individuales aseguran que tu peludito esté bajo supervisión constante, reduciendo el riesgo de contagio de enfermedades, accidentes o imprevistos.",
       icon: dogSecurity,
     },
   ],

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Container } from "@/components/Container";
-import heroImg from "../../public/img/hero.jpeg";
+import heroImg from "../../public/img/hero.webp";
 
 export const Hero = () => {
   return (
@@ -116,7 +116,7 @@ export const Hero = () => {
                 rel="noopener"
                 className="flex items-center space-x-2 text-gray-500 dark:text-gray-400"
               >
-                <span>Consulta cualquier duda en nuestro WhatsApp</span>
+                <span>Reserva ahora y garantízale a tu mascota el mejor cuidado, incluso cuando estés lejos</span>
               </a>
             </div>
           </div>

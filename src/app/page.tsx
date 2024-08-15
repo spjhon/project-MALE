@@ -30,12 +30,10 @@ export default function Home() {
       <Hero />
       <SectionTitle
         preTitle="¡En MalePet Care estamos aquí para ti y tu peludito!"
-        title="¿Por qué elegirnos?"
+        title="¿Por qué MalePets-Care es la elección ideal?"
         icon={drawpet02.src}
       >
-        Por que tu mascota estará en las mejores manos, brindandole la seguridad
-        y el amor que necesita mientras tú no estás. ¡Confia en nosotros para
-        mantener a tu mascota feliz y saludable!
+        Porque tu mascota estará en las mejores manos, brindándole la seguridad y el amor que necesita mientras tú no estás. ¡Confía en nosotros para mantener a tu mascota feliz y saludable!
       </SectionTitle>
 
       <Benefits data={benefitOne} />
@@ -79,7 +77,7 @@ export default function Home() {
 
       <SectionTitle
         preTitle="SERVICIO PERZONALIZADO, ATENCION EN CADA DETALLE"
-        title="¿Como contratar una niñera de mascotas?"
+        title="¿Cómo encontrar el servicio de cuidado perfecto para tu peludito?"
         icon={drawpet07.src}
       >
         Servico directo que dejara a tus peludos en buenas manos y regresaran
@@ -90,11 +88,10 @@ export default function Home() {
 
       <SectionTitle
         preTitle="FAQ"
-        title="Frequently Asked Questions"
+        title="Consultas que recibimos frecuentemente"
         icon={drawpet06.src}
       >
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
+        Dudas de nuestros clientes que se preguntan mas a menudo.
       </SectionTitle>
 
       <Faq />
