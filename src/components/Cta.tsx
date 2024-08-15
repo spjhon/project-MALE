@@ -24,7 +24,7 @@ export const Cta = () => {
         </div>
 
 
-        <div className="transition-transform duration-300 transform hover:scale-105 flex-shrink-0 w-full text-center lg:w-auto flex items-center justify-center">
+        <div className="transition-transform duration-300 transform hover:scale-105 flex-shrink-0 w-full text-center lg:w-auto flex justify-center">
         <a
                 href="https://wa.me/3147045347"
                 target="_blank"
@@ -36,8 +36,8 @@ export const Cta = () => {
                   xmlns="http://www.w3.org/2000/svg"
                   x="0px"
                   y="0px"
-                  width="100"
-                  height="100"
+                  width="200"
+                  height="150"
                   viewBox="0 0 100 100"
                 >
                   <path
