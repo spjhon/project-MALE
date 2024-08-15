@@ -36,21 +36,26 @@ export const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "•	¿Puedo conocer al cuidador antes de contratar el servicio?",
+    answer: "Recuerda que se realiza una visita previa con el cuidador.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "•	¿Qué sucede si mi mascota necesita atención veterinaria mientras estoy fuera?",
+    answer: "Tenemos un protocolo para emergencias veterinarias el cual se explica en la visita previa. ",
   },
   {
-    question: "What is your refund policy? ",
+    question: "•	¿Con qué frecuencia recibiré actualizaciones sobre mi mascota? ",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "En cada visita o paseo se hace la actualización con videos, fotos o video llamada y un resumen del comportamiento de cada peludito.",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "¿Pueden cuidar a mi mascota si tiene necesidades médicas especiales? ",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "Claro que si, siempre y cuando sean informadas en la visita previa.",
+  },
+  {
+    question: "¿Qué debo preparar antes de la llegada del cuidador? ",
+    answer:
+      "Debes de dejar todos los implementos al alcance de los cuidadores y en la visita previa informar donde se ubican los elementos correspondientes al cuidado de la mascota dependiendo de sus necesidades  (Alimentos, golosinas, Platos, medicamentos,  utensilios de aseo, arena, etc.)",
   },
 ];

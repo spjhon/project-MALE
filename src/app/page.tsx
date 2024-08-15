@@ -1,3 +1,4 @@
+"use client";
 
 import { Container } from "@/components/Container";
 import { Hero } from "@/components/Hero";
@@ -12,6 +13,7 @@ import { data } from "@/components/Slider/data";
 import GridGallery from "@/components/GridGallery";
 import { photos } from "@/components/data";
 import TimeLineDemo from "@/components/TimeLine/VerticalTimeLine";
+import { useInView } from "react-intersection-observer";
 
 import { benefitOne, benefitTwo } from "@/components/data";
 
@@ -27,17 +29,22 @@ import drawpet07 from "../../public/draws/drawpet07.webp";
 export default function Home() {
   return (
     <Container>
-      <Hero />
+
+<Hero />
+
       <SectionTitle
         preTitle="¡En MalePet Care estamos aquí para ti y tu peludito!"
         title="¿Por qué MalePets-Care es la elección ideal?"
         icon={drawpet02.src}
       >
-        Porque tu mascota estará en las mejores manos, brindándole la seguridad y el amor que necesita mientras tú no estás. ¡Confía en nosotros para mantener a tu mascota feliz y saludable!
+        Porque tu mascota estará en las mejores manos, brindándole la seguridad
+        y el amor que necesita mientras tú no estás. ¡Confía en nosotros para
+        mantener a tu mascota feliz y saludable!
       </SectionTitle>
 
-      <Benefits data={benefitOne} />
-      <Benefits imgPos="right" data={benefitTwo} />
+      <ComponentG />
+
+      <ComponentH />
 
       <SectionTitle
         preTitle="Mira un video"
@@ -47,7 +54,12 @@ export default function Home() {
         Video informativo sobre MalePet Care
       </SectionTitle>
 
-      <Video videoId="fZ0D0cnR88E" />
+     
+
+      <ComponentA />
+
+
+
 
       <SectionTitle
         preTitle="TESTIMONIOS"
@@ -58,19 +70,25 @@ export default function Home() {
         servicio ofrecido por MalePet Care
       </SectionTitle>
 
-      <Slider data={data} activeSlide={2}></Slider>
+      
+      <ComponentB />
+      <ComponentC />
 
-      <Testimonials />
+
+      
 
       <SectionTitle
         preTitle="PELUDOS FELICES"
         title="Conoce a los consentidos de MalePets Care"
         icon={drawpet04.src}
       >
-        Algunos de nuestros queridos peluditos gozando de nuestro servicio de calidad.
+        Algunos de nuestros queridos peluditos gozando de nuestro servicio de
+        calidad.
       </SectionTitle>
 
-      <GridGallery galleryID={"my-test-gallery"} images={photos}></GridGallery>
+      
+      <ComponentD />
+
 
       <SectionTitle
         preTitle="SERVICIO PERZONALIZADO, ATENCION EN CADA DETALLE"
@@ -81,7 +99,7 @@ export default function Home() {
         con una sonrisa que se nota
       </SectionTitle>
 
-      <TimeLineDemo></TimeLineDemo>
+      <ComponentE />
 
       <SectionTitle
         preTitle="FAQ"
@@ -91,9 +109,160 @@ export default function Home() {
         Dudas de nuestros clientes que se preguntan mas a menudo.
       </SectionTitle>
 
-      <Faq />
+      <ComponentF />
 
       <Cta />
     </Container>
   );
 }
+
+
+
+//para las animaciones a mano con intersection observer
+const ComponentA = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: true, // Dispara la animación solo una vez
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {<Video videoId="fZ0D0cnR88E" />}
+    </div>
+  );
+};
+
+
+const ComponentB = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: true, // Dispara la animación solo una vez
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {<Slider data={data} activeSlide={2}></Slider>}
+    </div>
+  );
+};
+
+
+const ComponentC = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: true, // Dispara la animación solo una vez
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {<Testimonials />}
+    </div>
+  );
+};
+
+
+const ComponentD = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: true, // Dispara la animación solo una vez
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {<GridGallery galleryID={"my-test-gallery"} images={photos}></GridGallery>}
+    </div>
+  );
+};
+
+
+const ComponentE = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: true, // Dispara la animación solo una vez
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      { <TimeLineDemo></TimeLineDemo>}
+    </div>
+  );
+};
+
+const ComponentF = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: true, // Dispara la animación solo una vez
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {  <Faq />}
+    </div>
+  );
+};
+
+const ComponentG = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: true, // Dispara la animación solo una vez
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      {  <Benefits data={benefitOne} />}
+    </div>
+  );
+};
+
+const ComponentH = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1, // Ajusta el umbral según tus necesidades
+    triggerOnce: true, // Dispara la animación solo una vez
+  });
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-700 transform ${
+        inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      { <Benefits imgPos="right" data={benefitTwo} />}
+    </div>
+  );
+};
