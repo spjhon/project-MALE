@@ -21,7 +21,7 @@ export function Footer() {
                 className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100"
               >
                 <Image
-                  src="/img/logo.svg"
+                  src="img/logo.svg"
                   alt="N"
                   width="32"
                   height="32"
@@ -46,7 +46,7 @@ export function Footer() {
                 title="link"
               >
                 <Image
-                  src="/img/vercel.svg"
+                  src="img/vercel.svg"
                   alt="Powered by Vercel"
                   width="212"
                   height="44"
