@@ -16,7 +16,7 @@ export type ExperienceElementProps = {
 };
 
 const ExperienceElement = ({ item }: ExperienceElementProps) => {
-  const { ref, inView } = useInView({ threshold: 0 });
+  const { ref, inView } = useInView({ triggerOnce: true});
 
   return (
     <div ref={ref} className="vertical-timeline-element text-gray-900">
