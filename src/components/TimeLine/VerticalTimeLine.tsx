@@ -13,7 +13,7 @@ import {experiences} from "./data"
 const TimeLineDemo = () => {
   return (
     <section>
-      <VerticalTimeline lineColor={"rgb(79 70 229)"}>
+      <VerticalTimeline lineColor={"rgb(79 70 229)"} animate={ true }>
         {experiences.map((item, index) => (
           <ExperienceElement key={index} item={item} />
         ))}

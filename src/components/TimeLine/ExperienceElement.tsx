@@ -28,6 +28,7 @@ const ExperienceElement = ({ item }: ExperienceElementProps) => {
         icon={item.icon}
         dateClassName="text-gray-600 dark:text-white"
         className=""
+        
       >
         <div className="mx-auto max-w-sm rounded-lg overflow-hidden shadow-lg bg-gray-800 dark: hover:shadow-2xl transition-shadow duration-300 animate-fade-in">
           <Image
