@@ -16,7 +16,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
   iconUrl,
 }) => {
   return (
-    <div className="relative p-8 w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-2xl min-h-[400px] flex items-center justify-center">
+    <div className="relative p-8 w-full max-w-sm mx-auto overflow-hidden bg-white rounded-lg shadow-2xl min-h-[400px] flex  items-center justify-center">
       <svg
         className="absolute top-0 left-0 w-full h-auto"
         xmlns="http://www.w3.org/2000/svg"
