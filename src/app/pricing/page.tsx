@@ -4,17 +4,9 @@ import { pricingOptions } from "@/components/data";
 
 import { FC } from "react";
 
-interface PricingTableProps {
-  data: Array<{
-    title: string;
-    price: number;
-    description: string;
-    features: string[];
-    iconUrl: string;
-  }>;
-}
 
-const PricingPage: FC<PricingTableProps> = function () {
+
+const PricingPage: FC = function () {
   return (
     <Container>
 
