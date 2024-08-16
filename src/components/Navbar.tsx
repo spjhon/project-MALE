@@ -93,7 +93,7 @@ pequeñas, cuando esta en pantallas grandes solo se muestra el logo, osea que el
                       as="a"
                       href="https://wa.me/3147045347"
                       target="_blank"
-                      
+                      rel="noopener"
                       title="Escribenos a whatsapp"
                       className="transition-transform duration-300 transform hover:scale-105 w-full px-6 py-2 mt-3 my-4 text-center text-white bg-indigo-600 rounded-md lg:ml-5"
                     >
