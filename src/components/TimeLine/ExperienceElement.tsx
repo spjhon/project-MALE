@@ -13,8 +13,9 @@ export type ExperienceElementProps = {
     icon: React.ReactNode;
     image: string;
     iconStyle: React.CSSProperties;
-    
+    id: string;
   },
+  
   
 };
 
@@ -48,7 +49,7 @@ const ExperienceElement = ({ item }: ExperienceElementProps) => {
   );
 
   return (
-    <div ref={ref} id={item.title} className="vertical-timeline-element text-gray-900">
+    <div ref={ref} id={item.id} className="vertical-timeline-element text-gray-900">
       <VerticalTimelineElement
         visible={inView}
         contentStyle={{

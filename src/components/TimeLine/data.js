@@ -5,6 +5,7 @@ import visitImage from "../../../public/TimeLine/visitImage.png";
 
 export const experiences = [
     {
+      id: "1",
       title: "Contacto inicial ",
       description: (
         <>
@@ -26,6 +27,7 @@ export const experiences = [
       },
     },
     {
+      id: "2",
       title: "Contacto de seguimiento",
       description: (
         <>
@@ -46,6 +48,7 @@ export const experiences = [
       },
     },
     {
+      id: "3",
       title: "Visita previa",
       description: (
         <>
@@ -70,6 +73,7 @@ export const experiences = [
       },
     },
     {
+      id: "4",
       title: "Iniciación del servicio",
       description: (
         <>
@@ -102,6 +106,7 @@ export const experiences = [
       },
     },
     {
+      id: "5",
       title: "Finalización del servicio ",
       description: (
         <>

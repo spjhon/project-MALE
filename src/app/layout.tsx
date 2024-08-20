@@ -22,11 +22,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MalePet Care",
-  description: "Servicio Profesional de Cuidado de Mascotas en la Ciduad de Manizales",
-
+  description: "Servicio Profesional de Cuidado de Mascotas en la Ciudad de Manizales",
 
   //BASIC METADATA
-
   generator: 'Next.js',
   applicationName: 'MalePet Care',
   referrer: 'origin-when-cross-origin',
@@ -61,10 +59,16 @@ export const metadata: Metadata = {
     telephone: true,
   },
   openGraph: {
-    images: '../../public/img/heroAbout.webp',
+    title: 'MalePet Care',
     description: "Servicio Profesional de Cuidado de Mascotas",
     locale: 'es_ES',
     type: 'website',
+    images: [
+      {
+        url: '/img/heroAbout.webp',
+        alt: 'Imagen representativa de MalePet Care',
+      }
+    ],
   },
   robots: {
     index: true, // Permitir indexación del sitio
@@ -79,16 +83,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Next.js',
-    description: 'The React Framework for the Web',
-    siteId: '1467726470533754880',
-    creator: '@nextjs',
-    creatorId: '1467726470533754880',
-    images: ['https://nextjs.org/og.png'], // Must be an absolute URL
+    title: 'MalePet Care',
+    description: 'Servicio Profesional de Cuidado de Mascotas en Manizales',
+    site: '@MalePetCare',
+    creator: '@CamiloAristizabal',
+    images: ['https://example.com/img/og-image.png'], // URL absoluta de la imagen
   },
   category: 'cuidado mascotas',
   viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
 };
+
 
 export default function RootLayout({
   children,
