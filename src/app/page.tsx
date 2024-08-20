@@ -1,21 +1,22 @@
 "use client";
 
+import TimeLineDemo from "@/components/TimeLine/VerticalTimeLine";
+import { useInView } from "react-intersection-observer";
+
 import { Container } from "@/components/Container";
 import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
-import { Benefits } from "@/components/Benefits";
+import { Benefits } from "@/components/Benefits/Benefits";
 import { Video } from "@/components/Video";
 import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 import Slider from "@/components/Slider/Slider";
-import { data } from "@/components/Slider/data";
-import GridGallery from "@/components/GridGallery";
-import { photos } from "@/components/data";
-import TimeLineDemo from "@/components/TimeLine/VerticalTimeLine";
-import { useInView } from "react-intersection-observer";
+import GridGallery from "@/components/GridGallery/GridGallery";
 
-import { benefitOne, benefitTwo } from "@/components/data";
+import { benefitOne, benefitTwo } from "@/components/Benefits/data";
+import { data } from "@/components/Slider/data";
+import { photos } from "@/components/GridGallery/data";
 
 //Dibujos de animalitos para adornar la pagina sacados de reddit
 

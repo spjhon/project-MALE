@@ -1,6 +1,6 @@
 import { Container } from "@/components/Container";
 import PricingTable from "@/components/PricingTable/PricingTable";
-import { pricingOptions } from "@/components/data";
+import { pricingOptions } from "@/components/PricingTable/data";
 
 import { FC } from "react";
 

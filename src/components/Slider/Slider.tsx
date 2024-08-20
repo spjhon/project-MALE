@@ -1,5 +1,11 @@
 "use client"
 
+import { useState } from "react";
+import React from "react";
+import { useSwipeable } from "react-swipeable";
+import styles from "./styles.module.css";
+import Image from "next/image";
+
 // Componente extraido de esta pagina:
 // https://codesandbox.io/p/sandbox/react-carousel-3d-9x3wt?file=%2Fsrc%2FSlider.js%3A1%2C1-118%2C1
 
@@ -32,11 +38,6 @@ interface SliderContentProps {
   desc: string;
 }
 
-import { useState } from "react";
-import React from "react";
-import { useSwipeable } from "react-swipeable";
-import styles from "./styles.module.css";
-import Image from "next/image";
 
 const Slider: React.FC<SliderProps> = (props) => {
   const [activeSlide, setactiveSlide] = useState(props.activeSlide);
