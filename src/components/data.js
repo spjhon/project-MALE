@@ -19,14 +19,14 @@ import dogWalking from "../../public/img/walking-the-dog.png"
 import dogSecurity from "../../public/img/dogSecurity.png"
 
 
-import photo001 from "../../public/photos/photo (1).jpeg"
-import photo002 from "../../public/photos/photo (2).jpeg"
-import photo003 from "../../public/photos/photo (3).jpeg"
-import photo004 from "../../public/photos/photo (4).jpeg"
-import photo005 from "../../public/photos/photo (5).jpeg"
-import photo006 from "../../public/photos/photo (6).jpeg"
-import photo007 from "../../public/photos/photo (7).jpeg"
-import photo008 from "../../public/photos/photo (8).jpeg"
+import photo001 from "../../public/photos/photo(1).jpeg"
+import photo002 from "../../public/photos/photo(2).jpeg"
+import photo003 from "../../public/photos/photo(3).jpeg"
+import photo004 from "../../public/photos/photo(4).jpeg"
+import photo005 from "../../public/photos/photo(5).jpeg"
+import photo006 from "../../public/photos/photo(6).jpeg"
+import photo007 from "../../public/photos/photo(7).jpeg"
+import photo008 from "../../public/photos/photo(8).jpeg"
 
 
 
