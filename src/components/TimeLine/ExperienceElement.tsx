@@ -23,7 +23,7 @@ const ExperienceElement = ({ item }: ExperienceElementProps) => {
   const onOpenModal = () => setOpen(true);
   const onCloseModal = () => setOpen(false);
 
-  const { ref, inView } = useInView({ triggerOnce: true });
+  const { ref, inView } = useInView({ triggerOnce: false });
 
   const closeIcon = (
     <svg
